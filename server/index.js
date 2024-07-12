@@ -6,7 +6,7 @@ const path = require('path');
 
 const app = express();
 app.use(cors({
-  origin: ['http://localhost:5173'], // Allow requests from local host and frontend application
+  origin: '*', 
   credentials: true
 }));
 app.use(express.json());
